@@ -1,15 +1,24 @@
-// ================= PRELOADER =================
-window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
+// ================= PRELOADER SCRIPT =================
 
-    preloader.style.opacity = "0";
-    preloader.style.transition = "opacity 0.8s ease";
+let progress = 0;
+const progressBar = document.querySelector(".progress-bar");
+const progressCount = document.getElementById("progress-count");
+const preloader = document.getElementById("preloader");
 
-    setTimeout(() => {
-        preloader.style.display = "none";
-    }, 800);
-});
+const interval = setInterval(() => {
+    progress++;
 
+    progressBar.style.width = progress + "%";
+    progressCount.textContent = progress;
+
+    if (progress >= 100) {
+        clearInterval(interval);
+
+        setTimeout(() => {
+            preloader.classList.add("fade-out");
+        }, 500);
+    }
+}, 20); // Speed of loading (adjust if needed)
 
 
 // Mobile Menu Toggle
@@ -57,6 +66,9 @@ faqItems.forEach(item => {
         }
     });
 });
+
+
+
 
 
 /* -------- FAQ SEARCH FUNCTION -------- */

@@ -33,40 +33,86 @@ body{
 
 
 /* ================= PRELOADER ================= */
+
 #preloader {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: var();
+    background: linear-gradient(135deg, #0f9b0f, #38ef7d);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    flex-direction: column;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
-.loader-content h3 {
-    color: white;
-    margin-top: 20px;
-    letter-spacing: 1px;
+.loader-content {
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+    max-width: 400px;
 }
 
-/* Recycling Spinner */
-.recycle-spinner {
-    width: 80px;
-    height: 80px;
-    border: 8px solid rgba(255,255,255,0.3);
-    border-top: 8px solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+/* Recycle Icon */
+.recycle-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+    animation: rotateIcon 2s linear infinite;
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
+@keyframes rotateIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
+/* Text */
+.loading-company-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.loading-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.loading-subtext {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #ffffff;
+    border-radius: 50px;
+    transition: width 0.2s ease;
+}
+
+/* Percentage */
+.progress-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Fade Out */
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 
@@ -162,7 +208,7 @@ body{
 .hero{
     height:100vh;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url('header.png') center/cover fixed;
+    url('images/header.png') center/cover fixed;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -345,18 +391,18 @@ body{
     text-align: center;
     transition: 0.4s ease;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.5s;
 }
 
 .service-card i {
     font-size: 45px;
     margin-bottom: 20px;
     color: #00b09b;
-    transition: 0.5s;
 }
 
 .service-card:hover {
     transform: scale(1.05) translateY(-15px) ;
-    background: linear-gradient(45deg, #80bd16, #1f7e5e);
+    background: linear-gradient(45deg, #5e8618, #1f7e5e);
     color: white;
 }
 
@@ -367,7 +413,7 @@ body{
 /* ================= PARALLAX BANNER ================= */
 .banner {
     height: 70vh;
-    background: url("recycle.jpg") center/cover fixed;
+    background: url("images/recycle.jpg") center/cover fixed;
     position: relative;
     display: flex;
     align-items: center;
@@ -895,9 +941,12 @@ body{
 .pickup-form button {
     width: 100%;
     padding: 14px;
+    font-size: 18px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    background: var(--bg);
+    color: #fff;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -966,7 +1015,7 @@ body{
 }
 
 .counter-box h3 {
-    font-size: 45px;
+    font-size: 35px;
     display: inline-block;
 }
 

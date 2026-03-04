@@ -6,7 +6,7 @@
     --color3: #26196e;
     --color4: #a03318;
     --primary: #0e3b2e;
-    --accent: #16a34a;
+    --accent: #006400;
     --light-bg: #f4f7f6;
     --text-dark: #1c1c1c;
 }
@@ -130,6 +130,12 @@ section {
     text-align: center;
     padding-bottom: 40px;
     font-size: 35px;
+}
+
+.intro h2,
+.corporate-text h2,
+.why h2 {
+    color: var(--accent)
 }
 
 /* GRID */

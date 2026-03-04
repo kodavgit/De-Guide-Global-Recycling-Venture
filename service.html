@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Services | DGGRV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | DGGRV</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="service.css">
+        <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="service.css">
 </head>
 <body>
 
-<div class="page-transition"></div>
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+
+
 
 <!-- HERO -->
 <section class="hero">
@@ -35,69 +58,70 @@
 </section>
 
 <!-- CORE SERVICES -->
-<section class="services container">
-
-    <div class="section-title">
-        <h2>Our Core Services</h2>
-    </div>
-
-    <div class="services-grid">
-
-        <div class="service-card glass reveal">
-            <i class="fa-solid fa-recycle"></i>
-            <h3>Aluminum Can Recycling</h3>
-            <p>
-                We collect, compress, and process used beverage cans into reusable aluminum
-                materials for manufacturing industries. Aluminum recycling reduces energy
-                consumption by up to 95% compared to new production.
-            </p>
+<section class="services">
+    <div class="service-wrapper container">
+        <div class="section-title">
+            <h2>Our Core Services</h2>
         </div>
-
-        <div class="service-card glass reveal">
-            <i class="fa-solid fa-bottle-water"></i>
-            <h3>Plastic Bottle Recovery</h3>
-            <p>
-                Our plastic recycling system ensures proper sorting, shredding, and processing
-                of PET bottles into reusable raw materials for packaging and textile production.
-            </p>
+    
+        <div class="services-grid">
+    
+            <div class="service-card glass reveal">
+                <i class="fa-solid fa-recycle"></i>
+                <h3>Aluminum Can Recycling</h3>
+                <p>
+                    We collect, compress, and process used beverage cans into reusable aluminum
+                    materials for manufacturing industries. Aluminum recycling reduces energy
+                    consumption by up to 95% compared to new production.
+                </p>
+            </div>
+    
+            <div class="service-card glass reveal">
+                <i class="fa-solid fa-bottle-water"></i>
+                <h3>Plastic Bottle Recovery</h3>
+                <p>
+                    Our plastic recycling system ensures proper sorting, shredding, and processing
+                    of PET bottles into reusable raw materials for packaging and textile production.
+                </p>
+            </div>
+    
+            <div class="service-card glass reveal">
+                <i class="fa-solid fa-industry"></i>
+                <h3>Scrap Metal & Iron Recycling</h3>
+                <p>
+                    We recover scrap irons from demolition sites and industrial facilities,
+                    converting them into valuable reusable metal resources for manufacturing.
+                </p>
+            </div>
+    
+            <div class="service-card glass reveal">
+                <i class="fa-solid fa-box"></i>
+                <h3>Carton & Packaging Recycling</h3>
+                <p>
+                    Recycling paper cartons and packaging materials into reusable pulp
+                    helps reduce deforestation and supports sustainable packaging solutions.
+                </p>
+            </div>
+    
+            <div class="service-card glass reveal">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Bulk Waste Collection</h3>
+                <p>
+                    We provide scheduled and on-demand waste pickup services for offices,
+                    estates, commercial buildings, and construction sites.
+                </p>
+            </div>
+    
+            <div class="service-card glass reveal">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h3>Waste Buy-Back Program</h3>
+                <p>
+                    Individuals and businesses can sell recyclable materials directly to DGGRV,
+                    creating income opportunities while supporting environmental protection.
+                </p>
+            </div>
+    
         </div>
-
-        <div class="service-card glass reveal">
-            <i class="fa-solid fa-industry"></i>
-            <h3>Scrap Metal & Iron Recycling</h3>
-            <p>
-                We recover scrap irons from demolition sites and industrial facilities,
-                converting them into valuable reusable metal resources for manufacturing.
-            </p>
-        </div>
-
-        <div class="service-card glass reveal">
-            <i class="fa-solid fa-box"></i>
-            <h3>Carton & Packaging Recycling</h3>
-            <p>
-                Recycling paper cartons and packaging materials into reusable pulp
-                helps reduce deforestation and supports sustainable packaging solutions.
-            </p>
-        </div>
-
-        <div class="service-card glass reveal">
-            <i class="fa-solid fa-truck"></i>
-            <h3>Bulk Waste Collection</h3>
-            <p>
-                We provide scheduled and on-demand waste pickup services for offices,
-                estates, commercial buildings, and construction sites.
-            </p>
-        </div>
-
-        <div class="service-card glass reveal">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            <h3>Waste Buy-Back Program</h3>
-            <p>
-                Individuals and businesses can sell recyclable materials directly to DGGRV,
-                creating income opportunities while supporting environmental protection.
-            </p>
-        </div>
-
     </div>
 
 </section>
@@ -125,7 +149,7 @@
             </div>
 
             <div class="corporate-image reveal">
-                <img src="https://images.unsplash.com/photo-1581093458791-9d15482442f1" alt="Recycling Operations">
+                <img src="images/header.png" alt="Recycling Operations">
             </div>
 
         </div>
@@ -199,6 +223,94 @@
         <a href="#" class="cta-btn">Contact Our Team</a>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+<!-- ================= PROFESSIONAL FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <!-- Company Info -->
+        <div class="footer-col">
+            <h3>GreenCycle Recycling</h3>
+            <p>
+                Turning waste into wealth. We collect aluminum cans, plastic bottles, cartons, 
+                and scrap iron while helping individuals and companies earn from recyclable materials.
+            </p>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#pickup">Request Pickup</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Aluminum Recycling</li>
+                <li>Plastic Bottle Collection</li>
+                <li>Scrap Iron Recovery</li>
+                <li>Bulk Pickup Service</li>
+                <li>Instant Payment</li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+            <p><i class="fas fa-phone"></i> +234 000 000 0000</p>
+            <p><i class="fas fa-envelope"></i> info@greencycle.com</p>
+
+            <form class="newsletter">
+                <input type="email" placeholder="Subscribe to newsletter">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/2340000000000" class="whatsapp-btn" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+
+
+<!-- ================= BOTTOM FOOTER ================= -->
+<footer>
+    <p>© 2026 GreenCycle Recycling | Turning Waste Into Wealth | Powered by KodavTech</p>
+</footer>
+
+
 
 <script src="services.js"></script>
 </body>

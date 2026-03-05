@@ -160,6 +160,7 @@ section {
 .service-card i {
     font-size: 35px;
     padding-bottom: 10px;
+    color: var(--color2);
 }
 
 .service-card:hover {
@@ -171,7 +172,7 @@ section {
 
 /* GLASS */
 .glass {
-    background: rgba(255,255,255,0.85); /* Increased visibility */
+    background: #fff;
     backdrop-filter: blur(10px);
     border-radius:20px;
     padding:35px;
@@ -215,7 +216,7 @@ section {
 .process-step span {
     font-size:40px;
     font-weight:bold;
-    color:var(--accent);
+    color:var(--color2);
 }
 
 .process-step:hover {
@@ -225,6 +226,7 @@ section {
 .why-card i {
     font-size: 32px;
     padding-bottom: 10px;
+    color: var(--color2);
 }
 
 .why-card:hover {

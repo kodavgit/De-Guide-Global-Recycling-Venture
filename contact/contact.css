@@ -85,7 +85,7 @@ body {
 /* HERO */
 .hero {
     height: 70vh;
-    background: url('images/page-header.jpg') center/cover fixed;
+    background: url('../images/page-header.jpg') center/cover fixed;
     display: flex;
     align-items: center;
     justify-content: center;

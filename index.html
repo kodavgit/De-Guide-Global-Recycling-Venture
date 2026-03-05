@@ -61,7 +61,7 @@
             <span><i class="bx bx-phone-call"></i> +2348035869870</span>
             <span><i class="fas fa-phone"></i> +2348147133547</span>
             <span><i class="fas fa-envelope"></i> deguideglobal@gmail.com</span>
-            <span><i class="fas fa-clock"></i> Mon - Sat: 8:00AM - 6:00PM</span>
+            <span><i class="fas fa-clock"></i> sun - Sun: 8:00AM - 6:00PM</span>
         </div>
 
         <div class="top-socials">
@@ -83,9 +83,9 @@
 
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="service/service.html">Services</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
     </ul>
 
     <div class="menu-toggle">
@@ -156,7 +156,7 @@
         </div>
 
         <div class="about-image">
-            <img src="images/bottles.jpg" alt="">
+            <img src="images/pet-bottles.jpg" alt="">
         </div>
 
     </div>
@@ -254,26 +254,83 @@
                         <thead>
                             <tr>
                                 <th>Material</th>
-                                <th>Price per Kg (₦)</th>
+                                <th>Minimum Quantity Accepted</th>
                             </tr>
                         </thead>
+
                         <tbody>
                             <tr>
-                                <td>Aluminum Cans</td>
-                                <td>850</td>
+                                <td>Almaco</td>
+                                <td>20 Kg</td>
                             </tr>
+
                             <tr>
-                                <td>Plastic Bottles</td>
-                                <td>300</td>
+                                <td>Nylon</td>
+                                <td>10 Kg</td>
                             </tr>
+
+                            <tr>
+                                <td>Rubber</td>
+                                <td>15 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>PET Bottles</td>
+                                <td>1 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Copper</td>
+                                <td>5 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Brass</td>
+                                <td>5 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Damaged Home Appliances</td>
+                                <td>1 Unit or More</td>
+                            </tr>
+
+                            <tr>
+                                <td>Car Parts</td>
+                                <td>10 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Batteries</td>
+                                <td>5 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Aluminum Cans</td>
+                                <td>10 Kg</td>
+                            </tr>
+
                             <tr>
                                 <td>Scrap Iron</td>
-                                <td>450</td>
+                                <td>20 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Cartons</td>
+                                <td>15 Kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Mixed Materials</td>
+                                <td>25 Kg</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
     
+                <p class="price-note">
+                Prices for recyclable materials vary depending on market conditions.
+                Please contact us for the latest buying rates.
+                </p>
             </div>
     
     
@@ -429,9 +486,6 @@
         <!-- RIGHT SIDE (FORM) -->
         <div class="pickup-content">
 
-            
-            
-
             <div class="pickup-overlay">
                 <h3>We Come To You</h3>
                 <p>Schedule a pickup and turn waste into value today.</p>
@@ -458,10 +512,19 @@
                 <div class="form-group">
                     <select required>
                         <option value="">Select Material Type</option>
+                        
                         <option>Aluminum Cans</option>
-                        <option>Plastic Bottles</option>
+                        <option>Pet Bottles</option>
                         <option>Scrap Iron</option>
                         <option>Cartons</option>
+                        <option>Almaco</option>
+                        <option>Nylon</option>
+                        <option>Rubber</option>
+                        <option>Copper</option>
+                        <option>Brass</option>
+                        <option>Damage home appliances</option>
+                        <option>Car parts</option>
+                        <option>Batteries</option>
                         <option>Mixed Materials</option>
                     </select>
                 </div>
@@ -630,18 +693,11 @@
 
         <!-- Company Info -->
         <div class="footer-col">
-            <h3>GreenCycle Recycling</h3>
+            <h3>De Guide Global Recycling</h3>
             <p>
                 Turning waste into wealth. We collect aluminum cans, plastic bottles, cartons, 
                 and scrap iron while helping individuals and companies earn from recyclable materials.
             </p>
-
-            <div class="footer-socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
         </div>
 
         <!-- Quick Links -->
@@ -675,25 +731,28 @@
             <p><i class="fas fa-phone"></i> +234 000 000 0000</p>
             <p><i class="fas fa-envelope"></i> info@greencycle.com</p>
 
-            <form class="newsletter">
-                <input type="email" placeholder="Subscribe to newsletter">
-                <button type="submit">Subscribe</button>
-            </form>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
 
     </div>
 
 </footer>
 
-<!-- Back to Top Button -->
-<button id="backToTop"><i class="fas fa-arrow-up"></i></button>
-
+<!-- WHATSAPP -->
+<a href="https://wa.me/2340000000000" class="whatsapp-btn" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 
 
 <!-- ================= BOTTOM FOOTER ================= -->
 <footer>
-    <p>© 2026 GreenCycle Recycling | Turning Waste Into Wealth | Powered by KodavTech</p>
+    <p>© 2026 De Guide Global Recycling Venture | Turning Waste Into Wealth | Powered by KodavTech</p>
 </footer>
 
 

@@ -17,7 +17,7 @@ body{
     --color2: #47cf47;
     --color3: #26196e;
     --color4: #a03318;
-
+    --primary: #0e3b2e;
 }
 
 
@@ -415,8 +415,8 @@ body{
 
 /* ================= PARALLAX BANNER ================= */
 .banner {
-    height: 70vh;
-    background: url("images/recycle.jpg") center/cover fixed;
+    height: 90vh;
+    background: url("images/PET-bottle-recycling-1024x585.avif") center/cover fixed;
     position: relative;
     display: flex;
     align-items: center;
@@ -528,7 +528,7 @@ body{
 
 .price-faq-section {
     padding: 100px 0;
-    background: var(--bg2);
+    background: var(--primary);
     position: relative;
     overflow: hidden;
 }
@@ -973,7 +973,7 @@ body{
 
 .pro-counter-section {
     padding: 90px 0;
-    background: var(--bg2);
+    background: var(--primary);
     color: white;
     text-align: center;
     position: relative;
@@ -1054,7 +1054,7 @@ body{
 
 .testimonials {
     padding: 100px 5%;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(#646268, #212024);
     color: #fff;
     overflow: hidden;
 }
@@ -1262,32 +1262,32 @@ body{
     cursor: pointer;
 }
 
-
-
-/* Back To Top Button */
-#backToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: linear-gradient(135deg, #0c8f3f, #0c5c2e);
-    color: white;
-    border: none;
-    padding: 12px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    transition: 0.3s;
-}
-
-#backToTop:hover {
-    transform: scale(1.1);
-}
-
-
 /* ========== BOTTOM FOOTER ========== */
 footer{
     background: #242424;
     color:white;
     text-align:center;
     padding:20px;
+}
+
+
+
+
+
+
+/* WHATSAPP */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #0c8f3f, #0c5c2e);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }

@@ -90,7 +90,7 @@ body {
 /* HERO */
 .about-hero {
     height: 70vh;
-    background: linear-gradient(#0e3b2ecc, #0e3b2ecc), url('images/page-header.jpg') center/cover fixed;
+    background: linear-gradient(#0e3b2ecc, #0e3b2ecc), url('../images/page-header.jpg') center/cover fixed;
     display: flex;
     align-items: center;
     justify-content: center;

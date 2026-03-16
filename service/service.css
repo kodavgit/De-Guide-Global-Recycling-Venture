@@ -169,6 +169,10 @@ section {
     transform: translateY(-15px);
 }
 
+.service-card:hover i {
+    color: #fff;
+}
+
 
 /* GLASS */
 .glass {
@@ -203,7 +207,7 @@ section {
 /* PROCESS */
 .process-section {
     background:var(--primary);
-    color:white;
+    color: #fff;
 }
 
 .process-step {

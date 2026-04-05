@@ -16,9 +16,9 @@ const interval = setInterval(() => {
 
         setTimeout(() => {
             preloader.classList.add("fade-out");
-        }, 500);
+        }, 100000);
     }
-}, 20); // Speed of loading (adjust if needed)
+}, 5); // Speed of loading (adjust if needed)
 
 
 // Mobile Menu Toggle
@@ -28,6 +28,33 @@ const nav = document.querySelector('.nav-links');
 toggle.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
+
+
+
+
+
+
+
+
+
+
+const cards = document.querySelectorAll('.card img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+cards.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.classList.add('active');
+        lightboxImg.src = img.src;
+    });
+});
+
+lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+
+
+
 
 
 

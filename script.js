@@ -16,7 +16,7 @@ const interval = setInterval(() => {
 
         setTimeout(() => {
             preloader.classList.add("fade-out");
-        }, 100000);
+        }, 300);
     }
 }, 5); // Speed of loading (adjust if needed)
 

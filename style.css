@@ -184,7 +184,7 @@ body{
 }
 
 .logo img {
-    width: 25%;
+    width: 20%;
 }
 
 .nav-links{
@@ -850,14 +850,6 @@ body{
 
 
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 992px) {
-    .price-faq-container {
-        flex-direction: column;
-    }
-}
-
-
 
 
 
@@ -944,32 +936,6 @@ body{
 }
 
 
-/* ================= VERTICAL DIVIDER ================= */
-
-.vertical-divider {
-    width: 2px;
-    min-height: 100%;
-    background: linear-gradient(to bottom, transparent, white, transparent);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Animated glowing line */
-.vertical-divider::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    background: #ffffffcc;
-    top: -60px;
-    animation: dividerGlow 3s linear infinite;
-}
-
-@keyframes dividerGlow {
-    0% { top: -60px; }
-    100% { top: 100%; }
-}
-
 
 /* ================= SIDE WIDTH ================= */
 
@@ -1020,14 +986,52 @@ body{
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 992px) {
+@media (max-width: 1038px) {
 
     .price-faq-glass {
         flex-direction: column;
     }
-
     .vertical-divider {
         display: none;
+    }
+}
+
+@media (max-width: 554px) {
+    .price-faq-glass {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 436px) {
+    .faq-question h3 {
+        font-size: 14px;
+    }
+    .faq-question {
+        padding: 10px;
+    }
+    .price-faq-glass {
+        background: none;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+    .section-header {
+        padding: 0;
+    }
+    .section-header h2 {
+        font-size: 20px;
+    }
+    .section-header p {
+        font-size: 14px;
+    }
+    .price-side,
+    .faq-side {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 436px) {
+    .price-table-wrapper {
+        padding: 10px;
     }
 }
 
@@ -1158,9 +1162,20 @@ body{
     .pickup-wrapper {
         flex-direction: column;
     }
-
     .pickup-content {
         padding: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pickup-image {
+        display: none;
+    }
+    .pickup-content {
+        min-width: 150px;
+    }
+    .pickup-content {
+        padding: 15px;
     }
 }
 

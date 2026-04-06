@@ -232,6 +232,29 @@ body{
     }
 }
 
+@media (max-width: 418px) {
+    .navbar{
+        justify-content: center;
+        padding: 0 5%;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .nav-links li{
+        margin-left:15px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 354px) {
+    .logo img {
+        width: 50px;
+    }
+    .nav-links li{
+        margin-left:6px;
+        font-size: 11px;
+    }
+}
+
 
 /* ========== HERO ========== */
 .hero{
@@ -388,7 +411,7 @@ body{
 @media (max-width: 548px) {
     .hero-content{
         max-width:400px;
-        padding-top: 150px;
+        padding-top: 100px;
     }
     .hero h1{
         font-size:1.8rem;

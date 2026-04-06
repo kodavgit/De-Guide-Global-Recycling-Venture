@@ -1,33 +1,36 @@
 // ================= PRELOADER SCRIPT =================
 
-let progress = 0;
-const progressBar = document.querySelector(".progress-bar");
-const progressCount = document.getElementById("progress-count");
-const preloader = document.getElementById("preloader");
+// let progress = 0;
+// const progressBar = document.querySelector(".progress-bar");
+// const progressCount = document.getElementById("progress-count");
+// const preloader = document.getElementById("preloader");
 
-const interval = setInterval(() => {
-    progress++;
+// const interval = setInterval(() => {
+//     progress++;
 
-    progressBar.style.width = progress + "%";
-    progressCount.textContent = progress;
+//     progressBar.style.width = progress + "%";
+//     progressCount.textContent = progress;
 
-    if (progress >= 100) {
-        clearInterval(interval);
+//     if (progress >= 100) {
+//         clearInterval(interval);
 
-        setTimeout(() => {
-            preloader.classList.add("fade-out");
-        }, 300);
-    }
-}, 5); // Speed of loading (adjust if needed)
+//         setTimeout(() => {
+//             preloader.classList.add("fade-out");
+//         }, 300);
+//     }
+// }, 5); 
+
+
+
 
 
 // Mobile Menu Toggle
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
+// const toggle = document.querySelector('.menu-toggle');
+// const nav = document.querySelector('.nav-links');
 
-toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
+// toggle.addEventListener('click', () => {
+//     nav.classList.toggle('active');
+// });
 
 
 
